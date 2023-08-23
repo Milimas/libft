@@ -1,5 +1,6 @@
 NAME = libft.a
 CC = clang
+UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Darwin)
 UNAME_P := $(shell uname -p)
 ifeq ($(UNAME_P),arm)
