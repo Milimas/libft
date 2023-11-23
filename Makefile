@@ -1,12 +1,5 @@
 NAME = libft.a
 CC = clang
-UNAME_S := $(shell uname -s)
-ifeq ($(UNAME_S),Darwin)
-UNAME_P := $(shell uname -p)
-ifeq ($(UNAME_P),arm)
-	CC = arch -x86_64 clang
-endif
-endif
 AR = ar
 
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
